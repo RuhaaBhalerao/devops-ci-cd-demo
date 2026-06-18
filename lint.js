@@ -1,4 +1,9 @@
+
+const fs = require("fs");
+
 const content = fs.readFileSync("server.js", "utf8");
+
+// rest of your code...
 // Read the entire server.js file as text
 
 if (content.includes("console.log('bad')")) {
